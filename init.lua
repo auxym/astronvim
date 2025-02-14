@@ -1,3 +1,5 @@
+-- Astronvim config
+
 -- This file simply bootstraps the installation of Lazy.nvim and then calls other files for execution
 -- This file doesn't necessarily need to be touched, BE CAUTIOUS editing this file and proceed at your own risk.
 local lazypath = vim.env.LAZY or vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
@@ -17,3 +19,8 @@ end
 
 require "lazy_setup"
 require "polish"
+
+-- End Astronvim config
+-- Personal config
+
+vim.o.guifont = "JetBrainsMonoNL Nerd Font:h11"
