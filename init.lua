@@ -24,3 +24,10 @@ require "polish"
 -- Personal config
 
 vim.o.guifont = "JetBrainsMonoNL Nerd Font:h11"
+
+-- Copy to system clipboard
+-- Note: Shit-p to paste from system clipboard
+vim.keymap.set('v', '<C-c>', '"+y')
+vim.keymap.set('n', 'cp', '"+y')
+vim.keymap.set('n', 'cpp', '"+yy')
+
